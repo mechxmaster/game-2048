@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2048 - Premium Edition</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="2048 Logo" class="game-logo">
+            </div>
+            <div class="title-container">
+                <h1 class="title">2048</h1>
+                <p class="subtitle">Join the numbers and get to the <strong>2048 tile!</strong></p>
+            </div>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="score-label">SCORE</div>
+                    <div class="score-value" id="score">0</div>
+                    <div class="score-addition" id="score-addition"></div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">BEST</div>
+                    <div class="score-value" id="best-score">0</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="controls-row">
+            <button class="btn restart-btn" id="restart-btn">New Game</button>
+        </div>
+
+        <div class="game-container">
+            <div class="grid-container" id="grid-container">
+                <!-- 16 Background Grid Cells -->
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+            <div class="tile-container" id="tile-container">
+                <!-- Dynamic Tiles will be inserted here by JS -->
+            </div>
+            
+            <div class="game-message" id="game-message">
+                <p class="message-text" id="message-text"></p>
+                <div class="actions">
+                    <button class="btn retry-btn" id="retry-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="instructions">
+            <p><strong>How to play:</strong> Use your <strong>arrow keys</strong>, <strong>WASD</strong>, or <strong>swipe</strong> to move the tiles. Tiles with the same number merge into one when they touch. Add them up to reach <strong>2048!</strong></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
