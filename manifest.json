@@ -1,0 +1,17 @@
+{
+  "name": "2048 Game",
+  "short_name": "2048",
+  "description": "A sleek and responsive 2048 puzzle game.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
